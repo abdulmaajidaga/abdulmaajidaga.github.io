@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdul Maajid Aga | Robotics Engineer</title>
+  <meta name="description" content="Abdul Maajid Aga, robotics engineer in Dubai. Projects, experience, publications and contact details." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="#top" class="wordmark">Abdul Maajid Aga</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="assets/docs/resume.pdf" class="nav-resume" target="_blank" rel="noopener">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ INTRO ============ -->
+    <section class="hero wrap">
+      <div class="hero-content">
+        <p class="hero-role">Robotics Engineer in Dubai, UAE</p>
+        <h1 class="hero-headline">I build robots that see, plan and move in the real world.</h1>
+        <p class="hero-sub">
+          I graduated with First Class Honours in Robotics from Heriot-Watt University Dubai,
+          where I now work as a Research Assistant. I enjoy working across the whole robot,
+          from perception and control down to the embedded hardware.
+        </p>
+      </div>
+      <img src="assets/images/profile.jpg" alt="Abdul Maajid Aga" class="hero-photo" />
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="work" class="section work-section wrap">
+      <div class="section-head">
+        <h2>Projects</h2>
+      </div>
+
+      <div class="work-grid">
+
+        <article class="work-card work-card--featured">
+          <div class="work-media">
+            <img src="assets/images/atlas_racing.jpg" alt="Working on the Atlas Racing autonomous race car on track" loading="lazy">
+          </div>
+          <div class="work-body">
+            <span class="work-tag">Formula Student AI · Atlas Racing</span>
+            <h3>Autonomous Race Car</h3>
+            <p>
+              Built the self driving stack for our team's race car. It fuses LiDAR,
+              stereo camera and INS data in ROS 2 for SLAM, then uses Pure Pursuit and
+              PID control to drive full laps. I also wrote the CANopen link to the car
+              with under 10 ms latency.
+            </p>
+            <!-- <a href="#" class="case-study-link">View case study</a> -->
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-media">
+            <video src="assets/videos/yumi_sorting.mp4" autoplay muted loop playsinline preload="metadata"
+              aria-label="ABB YuMi robot sorting objects"></video>
+          </div>
+          <div class="work-body">
+            <span class="work-tag">ABB Robotics Internship</span>
+            <h3>Robotic Sorting on ABB YuMi</h3>
+            <p>
+              A dual arm YuMi robot that sorts objects from plain text commands like
+              "sort the red cubes from the yellow cylinders". A small language model plans
+              the steps, Grounded SAM2 and a RealSense camera find each object in 3D, and
+              cuRobo plans collision free moves.
+            </p>
+            <!-- <a href="#" class="case-study-link">View case study</a> -->
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-media">
+            <video src="assets/videos/gofa_chess.mp4" autoplay muted loop playsinline preload="metadata"
+              aria-label="ABB GoFa robot playing chess"></video>
+          </div>
+          <div class="work-body">
+            <span class="work-tag">ABB Robotics Internship</span>
+            <h3>Robotic Chess on ABB GoFa</h3>
+            <p>
+              A GoFa cobot that plays chess against people using the Stockfish engine.
+              An OpenCV vision system tracks every move with 100% accuracy, and a Python
+              backend sends moves to the robot through a custom RAPID socket server.
+            </p>
+            <!-- <a href="#" class="case-study-link">View case study</a> -->
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-media">
+            <video src="assets/videos/aisv.mp4" autoplay muted loop playsinline preload="metadata"
+              aria-label="Marine surface vehicle project"></video>
+          </div>
+          <div class="work-body">
+            <span class="work-tag">Mubadala Competition · Embedded Lead</span>
+            <h3>Marine Surface Vehicle</h3>
+            <p>
+              Led the electronics for a 9 person team. Used micro-ROS on ESP32 boards
+              to connect thrusters, pumps and sensors to an NVIDIA Jetson, with safety
+              watchdogs in case communication drops.
+            </p>
+            <!-- <a href="#" class="case-study-link">View case study</a> -->
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-media">
+            <video src="assets/videos/rehab_sim.mp4" autoplay muted loop playsinline preload="metadata"
+              aria-label="Musculoskeletal arm simulation in MuJoCo"></video>
+          </div>
+          <div class="work-body">
+            <span class="work-tag">Honours Dissertation</span>
+            <h3>AI for Stroke Rehabilitation</h3>
+            <p>
+              Trained generative models in PyTorch to create realistic motion data from
+              a small clinical dataset, then tested it in a MuJoCo simulation of the
+              human arm.
+            </p>
+            <!-- <a href="#" class="case-study-link">View case study</a> -->
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-media">
+            <video src="assets/videos/waste_robot.mp4" autoplay muted loop playsinline preload="metadata"
+              aria-label="Waste collection robot's vision system detecting a waste barrel"></video>
+          </div>
+          <div class="work-body">
+            <span class="work-tag">Project Lead</span>
+            <h3>Waste Collection Robot</h3>
+            <p>
+              Led a team of 6 to build a robot that finds and picks up waste. Designed
+              a custom 4 joint arm and added visual SLAM on a Raspberry Pi 5 for
+              navigation.
+            </p>
+            <!-- <a href="#" class="case-study-link">View case study</a> -->
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-media">
+            <video src="assets/videos/powertrain.mp4" autoplay muted loop playsinline preload="metadata"
+              aria-label="72V electric powertrain running"></video>
+          </div>
+          <div class="work-body">
+            <span class="work-tag">Powertrain Engineer</span>
+            <h3>72V Electric Powertrain</h3>
+            <p>
+              Built a 72V electric powertrain in one month with a team of 3, including
+              a custom battery pack and the motor controller wiring.
+            </p>
+            <!-- <a href="#" class="case-study-link">View case study</a> -->
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="section wrap">
+      <div class="section-head">
+        <h2>Experience</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-when">Sep 2026 to Present</div>
+          <div class="timeline-what">
+            <h3>Research Assistant <span>at Heriot-Watt University</span></h3>
+            <p>
+              Building the electronics and waterproofing for a marine robot that will be
+              deployed at sea.
+            </p>
+          </div>
+        </li>
+
+        <li class="timeline-item">
+          <div class="timeline-when">Aug 2026 to Sep 2026</div>
+          <div class="timeline-what">
+            <h3>Intern <span>at ABB Robotics</span></h3>
+            <p>
+              Built the robotic sorting and robotic chess projects shown above, on ABB YuMi
+              and GoFa robots.
+            </p>
+          </div>
+        </li>
+
+        <li class="timeline-item">
+          <div class="timeline-when">Feb 2026 to Apr 2026</div>
+          <div class="timeline-what">
+            <h3>R&amp;D Intern <span>at AIMBeyond Lab</span></h3>
+            <p>
+              Planned the drive by wire conversion of a military desert rescue vehicle,
+              from choosing hardware to drawing the wiring schematics.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ PUBLICATIONS & AWARDS ============ -->
+    <section class="section wrap">
+      <div class="recognition-stack">
+        <div>
+          <h2 class="recognition-title">Publications</h2>
+          <ul class="rec-list">
+            <li>
+              <strong>Simulating an Autonomous System in CARLA using ROS 2</strong>
+              <span class="rec-meta">IEEE ICSPIS, 2025</span>
+            </li>
+            <li>
+              <strong>SUSHI: A Vision System for Reactive ASV Navigation</strong>
+              <span class="rec-meta">Journal of Intelligent &amp; Robotic Systems, 2026</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="recognition-title">Awards</h2>
+          <ul class="rec-list">
+            <li>
+              <strong>Formula Student AI, 1st in Overall AI Statics</strong>
+              <span class="rec-meta">IMechE Silverstone, 2025</span>
+            </li>
+            <li>
+              <strong>IET Student Prize</strong>
+              <span class="rec-meta">Institution of Engineering &amp; Technology, 2024</span>
+            </li>
+            <li>
+              <strong>University Prize</strong>
+              <span class="rec-meta">Heriot-Watt University, 2024</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section wrap">
+      <div class="section-head">
+        <h2>Skills</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skills-group">
+          <h3>Software &amp; programming</h3>
+          <div class="skills-pills">
+            <span class="skill-pill">C++</span>
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">ROS / ROS 2</span>
+            <span class="skill-pill">Nav2</span>
+            <span class="skill-pill">micro-ROS</span>
+            <span class="skill-pill">PyTorch</span>
+            <span class="skill-pill">MATLAB / Simulink</span>
+            <span class="skill-pill">RAPID</span>
+            <span class="skill-pill">Linux</span>
+            <span class="skill-pill">Git</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <h3>Simulation &amp; validation</h3>
+          <div class="skills-pills">
+            <span class="skill-pill">CARLA</span>
+            <span class="skill-pill">IPG Automotive</span>
+            <span class="skill-pill">Gazebo</span>
+            <span class="skill-pill">MuJoCo</span>
+            <span class="skill-pill">MyoSuite</span>
+            <span class="skill-pill">Webots</span>
+            <span class="skill-pill">RobotStudio</span>
+            <span class="skill-pill">Sim2Real &amp; HIL</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <h3>Perception &amp; autonomy</h3>
+          <div class="skills-pills">
+            <span class="skill-pill">SLAM (FAST, ORB, RTAB-Map)</span>
+            <span class="skill-pill">Sensor fusion</span>
+            <span class="skill-pill">Localization</span>
+            <span class="skill-pill">Path &amp; motion planning</span>
+            <span class="skill-pill">cuRobo</span>
+            <span class="skill-pill">MoveIt</span>
+            <span class="skill-pill">Computer vision</span>
+            <span class="skill-pill">IK / ID</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <h3>Embedded &amp; hardware</h3>
+          <div class="skills-pills">
+            <span class="skill-pill">NVIDIA Jetson</span>
+            <span class="skill-pill">Raspberry Pi</span>
+            <span class="skill-pill">ESP32</span>
+            <span class="skill-pill">PCB design (KiCad)</span>
+            <span class="skill-pill">Real time I/O</span>
+            <span class="skill-pill">Motor control</span>
+            <span class="skill-pill">High voltage systems</span>
+            <span class="skill-pill">Sensor integration</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <h3>Controls &amp; communication</h3>
+          <div class="skills-pills">
+            <span class="skill-pill">CAN / CANopen / J1939</span>
+            <span class="skill-pill">PLC</span>
+            <span class="skill-pill">Drive by wire</span>
+            <span class="skill-pill">SPI / UART</span>
+            <span class="skill-pill">PID control</span>
+            <span class="skill-pill">Pure Pursuit</span>
+            <span class="skill-pill">Safety critical systems</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ CONTACT ============ -->
+  <footer id="contact" class="site-footer">
+    <div class="wrap footer-inner">
+      <h2 class="footer-headline">Contact</h2>
+
+      <div class="footer-links">
+        <a href="mailto:abdulmaajidaga@outlook.com" class="footer-link footer-link--wide">
+          <span class="footer-link-label">Email</span>
+          <span class="footer-link-value">abdulmaajidaga@outlook.com</span>
+        </a>
+        <a href="tel:+971524226306" class="footer-link">
+          <span class="footer-link-label">Phone</span>
+          <span class="footer-link-value">+971 52 422 6306</span>
+        </a>
+        <a href="https://www.linkedin.com/in/abdulmaajidaga/" class="footer-link" target="_blank" rel="noopener">
+          <span class="footer-link-label">LinkedIn</span>
+          <span class="footer-link-value">abdulmaajidaga</span>
+        </a>
+        <a href="https://github.com/abdulmaajidaga" class="footer-link" target="_blank" rel="noopener">
+          <span class="footer-link-label">GitHub</span>
+          <span class="footer-link-value">abdulmaajidaga</span>
+        </a>
+        <a href="assets/docs/resume.pdf" class="footer-link" target="_blank" rel="noopener">
+          <span class="footer-link-label">Resume</span>
+          <span class="footer-link-value">Download PDF</span>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
